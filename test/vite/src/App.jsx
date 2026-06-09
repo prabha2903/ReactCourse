@@ -1,7 +1,10 @@
 import Bye from './components/Bye'
+import Counter from './components/Counter'
 import Food from './components/food'
+import Form from './components/Form'
 import Fruits from './components/Fruits'
 import Hello from './components/Hello'
+import Message from './components/Message'
 function App() {
   return (
     <>
@@ -11,6 +14,9 @@ function App() {
     <Bye name='Jan' phNo='9807865432'/>
     <Food/>
     <Fruits/>
+    <Message />
+    <Counter/>
+    <Form/>
     </>
   )
 }
