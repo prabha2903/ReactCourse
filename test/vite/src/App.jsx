@@ -5,6 +5,7 @@ import Form from './components/Form'
 import Fruits from './components/Fruits'
 import Hello from './components/Hello'
 import Message from './components/Message'
+import Ue1 from './components/Ue1'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
     <Message />
     <Counter/>
     <Form/>
+    <Ue1/>
     </>
   )
 }
