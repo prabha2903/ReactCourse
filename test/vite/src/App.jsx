@@ -6,6 +6,7 @@ import Fruits from './components/Fruits'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Ue1 from './components/Ue1'
+import ProductList from './components/ProductList'
 
 import { UserContext } from "./UserContext";
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <UserContext.Provider value={user}>
       <>
+
         <Hello/>
 
         {/* Reusability of components */}
@@ -28,6 +30,9 @@ function App() {
         <Counter/>
         <Form/>
         <Ue1/>
+        {/* useMemo + useCallback + useRef Example */}
+        <ProductList/>
+
       </>
     </UserContext.Provider>
   )
