@@ -6,21 +6,31 @@ import Fruits from './components/Fruits'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Ue1 from './components/Ue1'
+
+import { UserContext } from "./UserContext";
+
 function App() {
+
+  const user = "Prabha";
+
   return (
-    <>
-    <Hello/>
-    {/* Reusability of components */}
-    <Bye name='Nisha' phNo='9876543210'/>
-    <Bye name='Jan' phNo='9807865432'/>
-    <Food/>
-    <Fruits/>
-    <Message />
-    <Counter/>
-    <Form/>
-    <Ue1/>
-    </>
+    <UserContext.Provider value={user}>
+      <>
+        <Hello/>
+
+        {/* Reusability of components */}
+        <Bye name='Nisha' phNo='9876543210'/>
+        <Bye name='Jan' phNo='9807865432'/>
+
+        <Food/>
+        <Fruits/>
+        <Message />
+        <Counter/>
+        <Form/>
+        <Ue1/>
+      </>
+    </UserContext.Provider>
   )
 }
 
-export default App
+export default App;
